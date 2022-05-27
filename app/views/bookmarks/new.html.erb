@@ -5,8 +5,8 @@
     <%= f.input :comment, label: "Comment" %>
     <%= f.association :movie, label: "Movie" %>
     <%= f.association :list, label: "List" %>
-    <%= f.button :submit, value: "Add bookmark" %>
+    <%= f.button :submit, value: "Add bookmark", class: "btn btn-gradient" %>
   <% end %>
-
-  <%= link_to "Back", list_path(@list) %>
+  <br>
+  <%= link_to "Back", list_path(@list), class: "btn btn-gradient"  %>
 </div>
